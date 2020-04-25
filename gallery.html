@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>staysafe in style | makesbyxem</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/makesbyxem_circle_v2.png" rel="icon">
+  <!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon_v2.ico"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Nivo Slider Theme -->
+  <link href="css/nivo-slider-theme.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css?v=1.0.9" rel="stylesheet">
+
+  <!-- Responsive Stylesheet File -->
+  <link href="css/responsive.css?v=1.0.9" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: eBusiness
+    Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  <!-- Clear Cache on Load-->
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+
+  <!-- Font Awesomes-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <!-- Custom Banner -->
+    <link href="css/custom-banner.css" rel="stylesheet">
+    
+  <script>
+    // Disable Right Click & Tap holding on Devices
+    document.addEventListener('contextmenu', function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    });
+    
+    // Cache Busting
+    window.addEventListener("load", function(){
+      var uniqueNum = new Date().getTime();
+
+      // update js scripts
+      var js_files = ['js/main.js','js/lazysizes.min.js']
+      for (let i = 0; i < js_files.length; i++){
+        var script = document.createElement("script"); 
+        script.src = js_files[i] + "?v=" + uniqueNum;
+        document.body.appendChild(script);
+      }
+      
+      // update css files
+      var css_files = ['css/style.css','css/responsive.css','css/custom-banner.css','css/nivo-slider-theme.css','css/util.css','css/main.css'];
+      for (let i = 0; i < css_files.length; i++){
+          var cssElement = document.createElement('link');
+          cssElement.setAttribute('rel','stylesheet');
+          cssElement.setAttribute('type','text/css');
+          var cssURL = css_files[i] + '?v=' + uniqueNum;
+          cssElement.setAttribute('href', cssURL);
+          document.getElementsByTagName("head")[0].appendChild(cssElement);
+      }
+
+      // update index images
+      var images = ['img/makesbyxem_circle_v2.png','img/background/IMG_1163_modified.jpg', 'img/about/animatedv3.gif', 'img/about/Masks.gif','img/about/announcement.gif'];
+      for (let i = 0; i < images.length; i++){
+          var image = document.createElement('img');
+          image.src = images[i] + '?v=' + uniqueNum;
+          document.getElementById('body').appendChild(image);
+      }
+
+      // update gallery images
+      for (let i = 1; i <= 50; i++){
+          var image = document.createElement('img');
+          image.src = 'img/gallery/' + i + '.png?v=' + uniqueNum;
+          document.getElementById('body').appendChild(image);
+      }
+
+      // update designs images
+      var images = ['img/designs/abstract_blue.png', 'img/designs/abstract_navy.png', 'img/designs/alpaca.png', 'img/designs/bee.png', 'img/designs/black.png', +
+        'img/designs/blackspots.png', 'img/designs/cactus.png', 'img/designs/camo.png', 'img/designs/cats.png', 'img/designs/checkered_blue.png', +
+        'img/designs/checkered_red.png', 'img/designs/cream_floral.png', 'img/designs/DarkNavy.png', 'img/designs/dark_grey.png', 'img/designs/dino.png', + 
+        'img/designs/dogs.png', 'img/designs/fox.png', 'img/designs/dusty_blue.png', 'img/designs/greyspots.png', 'img/designs/hellokitty.png', 'img/designs/Navy.png', + 
+        'img/designs/grapefruit.png', 'img/designs/panda.png', 'img/designs/pattern_triangle.png', 'img/designs/shark.png', 'img/designs/space_grey.png', + 
+        'img/designs/space_navy.png', 'img/designs/striped_greenv2.png', 'img/designs/striped_lightredv2.png', 'img/designs/striped_redv2.png', 'img/designs/superhero.png', +
+        'img/designs/sushi.png', 'img/designs/unicorn.png', 'img/designs/vehicles.png', 'img/designs/whale.png', 'img/designs/yellow_floral.png'];
+        for (let i = 0; i < images.length; i++){
+            var image = document.createElement('img');
+            image.src = images[i] + '?v=' + uniqueNum;
+            document.getElementById('body').appendChild(image);
+        }
+    });
+  </script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <!-- <div id="preloader"></div> -->
+
+  <header>
+    <!-- header-area start -->
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+                <!-- Brand -->
+                <a class="navbar-brand page-scroll sticky-logo" href="/#home">
+                  <!-- <h1>makesby<span>xem</span></h1> -->
+                  <!-- Uncomment below if you prefer to use an image logo -->
+                  <!-- <img src="img/logo.png" alt="" title=""> -->
+								</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a class="page-scroll" href="/#home"><i class="fas fa-home" aria-hidden="true"></i> HOME</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="/#announcement"><i class="fas fa-bullhorn" aria-hidden="true"></i> ANNOUNCEMENTS</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="/#about"><i class="fas fa-info-circle" aria-hidden="true"></i> ABOUT</a>
+                  </li>
+                  <li class="active">
+                    <a class="page-scroll" href="gallery.html"><i class="fa fa-camera-retro" aria-hidden="true"></i> STAYSAFE IN STYLE</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="designs.html"><i class="fas fa-palette" aria-hidden="true"></i> FABRIC DESIGNS</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="/#faq"><i class="fas fa-question-circle" aria-hidden="true"></i> FAQ</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar-collapse -->
+            </nav>
+            <!-- END: Navigation -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-area end -->
+  </header>
+  <!-- header end -->
+
+   <!-- Start About area -->
+   <div id="about" class="portfolio-area area-padding fix">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <br>
+            <h2 style="text-transform: none;">staysafe in style</h2>
+          </div>
+        </div>
+      </div>
+      <div class="bend niceties preview-2">
+        <!-- single-well start-->
+        <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 5%;">
+          <img data-src="img/gallery/20_v2.png" alt="" class="lazyload" style="height:600px;width:450px;">
+          <a class="adults_btn" href="adults.html">ADULTS</a>
+        </div>
+        <!-- single-well end-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <img data-src="img/gallery/29.png" alt="" class="lazyload" style="height:600px;width:450px;">
+          <a class="kids_btn" href="kids.html">KIDS</a>
+        </div>
+        <!-- End col-->
+      </div>
+    </div>
+  </div>
+  <!-- End About area -->
+
+  <!-- Start Footer bottom Area -->
+  <footer>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+                <br>
+                Modified by: <strong>Xem</strong> (Media), <strong>Ying<sup>2</sup></strong> (Media), <strong>Lin<sup>2</sup></strong> (Web) & <strong>Sam</strong> (QC)
+              </p>
+            </div>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
+              -->
+              <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/knob/jquery.knob.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="lib/appear/jquery.appear.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <script src="js/main.js?v=1.0.9"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha256-swvs/72H2JZrIbyDdMskQv2t0bpTO5tgJOWVMBgZq6U=" crossorigin="anonymous"></script>
+  <script src="js/lazysizes.min.js" async=""></script>
+  <script>
+    $('#pagination-demo').twbsPagination({
+      totalPages: 4,
+      // the current page that show on start
+      startPage: 1,
+
+      // maximum visible pages
+      visiblePages: 4,
+
+      initiateStartPageClick: true,
+
+      // template for pagination links
+      href: false,
+
+      // variable name in href template for page number
+      hrefVariable: '{{number}}',
+
+      // Text labels
+      first: 'First',
+      prev: 'Previous',
+      next: 'Next',
+      last: 'Last (4)',
+
+      // carousel-style pagination
+      loop: false,
+
+      
+      // callback function
+      onPageClick: function (event, page) {
+        $('.page-active').removeClass('page-active');
+        $('#page'+page).addClass('page-active');
+        $([document.documentElement, document.body]).animate({
+          scrollTop: 0
+      }, 0);
+      },
+
+      // pagination Classes
+      paginationClass: 'pagination',
+      nextClass: 'next',
+      prevClass: 'prev',
+      lastClass: 'last',
+      firstClass: 'first',
+      pageClass: 'page',
+      activeClass: 'active',
+      disabledClass: 'disabled'
+    });
+
+    var s = $("#sticker");
+    s.addClass("stick");
+    
+    $(document).ready(function(){
+        //Check if the current URL contains '#' 
+        if(document.URL.indexOf("#")==-1)
+        {
+            // Set the URL to whatever it was plus "#".
+            url = document.URL+"#";
+            location = "#";
+            //Reload the page
+            location.reload(true)
+        } 
+        
+        $([document.documentElement, document.body]).animate({
+                scrollTop: -100
+            }, 0);
+    });
+  </script>
+</body>
+
+</html>

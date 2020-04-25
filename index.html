@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>makesbyxem</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="DIY Masks">
+  <meta content="" name="Selling DIY Masks! - makesbyxem">
+
+  <!-- Favicons -->
+  <link href="img/makesbyxem_circle_v2.png" rel="icon">
+  <!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon_v2.ico"> -->
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Nivo Slider Theme -->
+  <link href="css/nivo-slider-theme.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css?v=1.0.9" rel="stylesheet">
+
+  <!-- Responsive Stylesheet File -->
+  <link href="css/responsive.css?v=1.0.9" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: eBusiness
+    Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  <!-- Clear Cache on Load-->
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+
+  <!-- Font Awesomes-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+  <!-- Custom Banner -->
+  <link href="css/custom-banner.css" rel="stylesheet">
+
+  <!-- Responsive Table-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    
+  <script>
+    // Disable Right Click & Tap holding on Devices
+    document.addEventListener('contextmenu', function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    });
+
+    // Cache Busting
+    window.addEventListener("load", function(){
+      var uniqueNum = new Date().getTime();
+
+      // update js scripts
+      var js_files = ['js/main.js','js/lazysizes.min.js']
+      for (let i = 0; i < js_files.length; i++){
+        var script = document.createElement("script"); 
+        script.src = js_files[i] + "?v=" + uniqueNum;
+        document.body.appendChild(script);
+      }
+
+      // update css files
+      var css_files = ['css/style.css','css/responsive.css','css/custom-banner.css','css/nivo-slider-theme.css','css/util.css','css/main.css'];
+      for (let i = 0; i < css_files.length; i++){
+          var cssElement = document.createElement('link');
+          cssElement.setAttribute('rel','stylesheet');
+          cssElement.setAttribute('type','text/css');
+          var cssURL = css_files[i] + '?v=' + uniqueNum;
+          cssElement.setAttribute('href', cssURL);
+          document.getElementsByTagName("head")[0].appendChild(cssElement);
+      }
+
+      // update index images
+      var images = ['img/makesbyxem_circle_v2.png','img/background/IMG_1163_modified.jpg', 'img/about/animatedv3.gif', 'img/about/Masks.gif','img/about/announcement.gif'];
+      for (let i = 0; i < images.length; i++){
+          var image = document.createElement('img');
+          image.src = images[i] + '?v=' + uniqueNum;
+          document.getElementById('body').appendChild(image);
+      }
+
+      // update gallery images
+      for (let i = 1; i <= 50; i++){
+          var image = document.createElement('img');
+          image.src = 'img/gallery/' + i + '.png?v=' + uniqueNum;
+          document.getElementById('body').appendChild(image);
+      }
+
+      // update designs images
+      var images = ['img/designs/abstract_blue.png', 'img/designs/abstract_navy.png', 'img/designs/alpaca.png', 'img/designs/bee.png', 'img/designs/black.png', +
+        'img/designs/blackspots.png', 'img/designs/cactus.png', 'img/designs/camo.png', 'img/designs/cats.png', 'img/designs/checkered_blue.png', +
+        'img/designs/checkered_red.png', 'img/designs/cream_floral.png', 'img/designs/DarkNavy.png', 'img/designs/dark_grey.png', 'img/designs/dino.png', + 
+        'img/designs/dogs.png', 'img/designs/fox.png', 'img/designs/dusty_blue.png', 'img/designs/greyspots.png', 'img/designs/hellokitty.png', 'img/designs/Navy.png', + 
+        'img/designs/grapefruit.png', 'img/designs/panda.png', 'img/designs/pattern_triangle.png', 'img/designs/shark.png', 'img/designs/space_grey.png', + 
+        'img/designs/space_navy.png', 'img/designs/striped_greenv2.png', 'img/designs/striped_lightredv2.png', 'img/designs/striped_redv2.png', 'img/designs/superhero.png', +
+        'img/designs/sushi.png', 'img/designs/unicorn.png', 'img/designs/vehicles.png', 'img/designs/whale.png', 'img/designs/yellow_floral.png'];
+        for (let i = 0; i < images.length; i++){
+            var image = document.createElement('img');
+            image.src = images[i] + '?v=' + uniqueNum;
+            document.getElementById('body').appendChild(image);
+        }
+    });
+  </script>
+  <style>
+    .divider{
+      flex-grow:1;
+      height: 1px;
+      background-color: #9f9f9f;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <!-- <div id="preloader"></div> -->
+
+  <header>
+    <!-- header-area start -->
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+                <!-- Brand -->
+                <a class="navbar-brand page-scroll sticky-logo" href="/#home">
+                  <!-- <h1>makesby<span>xem</span></h1> -->
+                  <!-- Uncomment below if you prefer to use an image logo -->
+                  <!-- <img src="img/logo.png" alt="" title=""> -->
+								</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="#home"><i class="fas fa-home" aria-hidden="true"></i> HOME</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#announcement"><i class="fas fa-bullhorn" aria-hidden="true"></i> ANNOUNCEMENTS</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#about"><i class="fas fa-info-circle" aria-hidden="true"></i> ABOUT</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="gallery.html"><i class="fa fa-camera-retro" aria-hidden="true"></i> STAYSAFE IN STYLE</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="designs.html"><i class="fas fa-palette" aria-hidden="true"></i> FABRIC DESIGNS</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#faq"><i class="fas fa-question-circle" aria-hidden="true"></i> FAQ</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar-collapse -->
+            </nav>
+            <!-- END: Navigation -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-area end -->
+  </header>
+  <!-- header end -->
+
+  <!-- Start Slider Area -->
+  <div id="home" class="banner-area">
+    <div class="bend niceties preview-2">
+        <img data-src="img/background/IMG_1163_modified.jpg" alt="" class="lazyload"/>
+        <a class="stay_safe_btn" href="gallery.html"><i class="fa fa-camera-retro" aria-hidden="true"></i> LOOKBOOK</a>
+        <p class="counter-count"><b>254</b><br>Masks<br>Sold</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Slider Area -->
+
+     <!-- Faq area start -->
+     <div id="announcement" class="faq-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Announcements</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12" style="background: rgba(254,182,170);">
+            <div class="corners">
+              <h5 style="margin-bottom: 10px;"><span style="color:#FC8069;">New!!!</span> 24 April 2020 11:30 PM</h5>
+              <p> Dear valued customers,
+                <br><br>
+                After a great push of production over the past week, we’re ready to come back with new <a href="designs.html">designs</a> fresh off the cargo this weekend!
+                <br><br>
+                Send in your orders to  <a href="https://api.whatsapp.com/send?phone=+6597369897" target="_blank"> <i class="fab fa-whatsapp-square" aria-hidden="true" style="color:green;"></i> whatsapp</a> us @ <i class="fas fa-mobile-alt" aria-hidden="true" style="color:black;"></i> <a href="https://api.whatsapp.com/send?phone=+6597369897" target="_blank">9736 9897</a>! 😁
+              </p>
+              <!-- <div class="divider"></div> -->
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 5%;">
+            <img data-src="img/about/announcement.gif" alt="" style="height:600px;" class="lazyload">
+          </div>
+        </div>
+        <!-- end Row -->
+      </div>
+    </div>
+    <!-- End Faq Area -->
+    
+  <!-- Start About area -->
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2 style="text-transform: none;">about makesbyxem</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- single-well start-->
+        <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left:5%;">
+          <img data-src="img/about/Masks.gif" alt="" class="lazyload" style="height:600px;width:450px;">
+        </div>
+        <!-- single-well end-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <h4 class="sec-head"><b><i class="fas fa-comments" aria-hidden="true" style="color:#FC8069;"></i> Why do we exist?</b></h4>
+              <p>
+                <i class="fas fa-check-circle" aria-hidden="true" style="color:green"></i> Using reusable masks means doing our part by freeing up surgical masks stock for frontliners
+                <br>
+                <i class="fas fa-check-circle" aria-hidden="true" style="color:green"></i> Wearing a mask doesn't have to be boring and uniform! Cute prints make doing essential runs much more enjoyable, what more, saving money by using it again & again & again 😃
+              </p>
+              <div class="divider" style="margin-top: 20px; margin-bottom: 20px;"></div>
+              <h4 class="sec-head"><b><i class="fas fa-tags" aria-hidden="true"  style="color:#FC8069;"></i> Size-Price Guide</b></h4>
+              <div class="table100">
+                <table>
+                  <thead>
+                    <tr class="table100-head">
+                      <th>Size</th>
+                      <th>Width (Flat)</th>
+                      <th>Height (Flat)</th>
+                      <th>Price (SGD)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>Mini</td>
+                        <td>5 Inches</td>
+                        <td>2.5 Inches</td>
+                        <td>$12</td>
+                      </tr>
+                      <tr>
+                        <td>Small</td>
+                        <td>6 Inches</td>
+                        <td>3 Inches</td>
+                        <td>$12</td>
+                      </tr>
+                      <tr>
+                        <td>Regular</td>
+                        <td>7 Inches</td>
+                        <td>3.5 Inches</td>
+                        <td>$15</td>
+                      </tr>
+                      <tr>
+                        <td>Upsize</td>
+                        <td>8 Inches</td>
+                        <td>4 Inches</td>
+                        <td>$16</td>
+                      </tr>
+                  </tbody>
+                </table>
+                <p style="font-style:italic;"><i class="fas fa-exclamation-circle" aria-hidden="true" style="color:#FC8069;"></i> Please allow 1-3 cm variation in individual pieces.</p>
+              </div>
+              <h4 class="sec-head" style="padding-top:10px;"><b><i class="fas fa-shipping-fast" aria-hidden="true" style="color:#FC8069;"></i> Postage ONLY</b>!</h4>
+              <p>
+                <i class="fas fa-envelope" aria-hidden="true" style="color:#FC8069;"></i> <b>Normal</b> - Additional $1
+                &ensp;<b>|</b>&ensp;
+                <i class="fas fa-envelope" aria-hidden="true" style="color:#FC8069;"></i> <b>Registered</b> - Additional $3.50
+              </p>
+              <div class="divider" style="margin-top: 20px; margin-bottom: 20px;"></div>
+              <p>
+                For interested buyers or enquiries, <a href="https://api.whatsapp.com/send?phone=+6597369897" target="_blank"> <i class="fab fa-whatsapp-square" aria-hidden="true" style="color:green;"></i> whatsapp</a> us @ <i class="fas fa-mobile-alt" aria-hidden="true" style="color:black;"></i> <a href="https://api.whatsapp.com/send?phone=+6597369897" target="_blank">9736 9897</a>!
+                <br>
+                Follow us on <a href="https://www.instagram.com/makesbyxem/" target="_blank"> <i class="fab fa-instagram-square" aria-hidden="true" style="color:#FC8069;"></i> Instagram,  @makesbyxem</a>, for latest news!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End col-->
+      </div>
+    </div>
+  </div>
+  <!-- End About area -->
+
+   <!-- Faq area start -->
+   <div id="faq" class="faq-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="faq-details">
+            <div class="panel-group" id="accordion">
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+											<a data-toggle="collapse"  class="active" data-parent="#accordion" href="#check1">
+                                                <span class="acc-icons"></span> Is this a medical mask?
+											</a>
+										</h4>
+                </div>
+                <div id="check1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <p>
+                      No, our masks are not medically proven to prevent viral strains. The purpose of using our masks is to free up surgical masks for our frontline healthcare workers.
+                      <br><br>
+                      Remember to wash your reusable mask frequently and sanitise your hands regularly! 😃 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#check2">
+                                                <span class="acc-icons"></span> Is it a must to put filter?
+											</a>
+										</h4>
+                </div>
+                <div id="check2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      You may if you wish to! Our masks have an opening to enable additional filter insertion. However, this is optional as our masks are already made up of 3 fabric layers. 
+                      <br><br>
+                      Spray tests have also been performed on our masks with alcohol, and no visible water particles have passed through. 😃
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#check3">
+                                                <span class="acc-icons"></span> Can I do any customisation?
+											</a>
+										</h4>
+                </div>
+                <div id="check3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      Unfortunately, the only customisations we are able to take from you are the designs that you will be choosing from our range of fabric! 
+                      <br><br>
+                      Please refer to the sizing of the masks <a href="#about">above</a> to decide which size you should be getting for your child. Thank you! 😃
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#check4">
+                                                <span class="acc-icons"></span> Will you restock designs which are sold out?
+											</a>
+										</h4>
+                </div>
+                <div id="check4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      As we acquire fabrics from various sources, we are unable to ensure if we will be able to bring back designs once they are sold out. This makes your masks all the more limited edition. 😉
+                      <br><br>
+                      Nevertheless, we will take all your feedback into account and do our best in re-acquiring popular designs. Keep checking back on our <a href="designs.html">page</a> to view stock statuses! 😁
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#check5">
+                                                <span class="acc-icons"></span> How should I wash the masks?
+											</a>
+										</h4>
+                </div>
+                <div id="check5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      For the first wash (and washes thereafter), take extra precaution in preventing potential colour bleeding. 
+                      <br><br>
+                      Some steps which you may consider taking are:
+                      <br>
+                      <i class="fas fa-check-circle" aria-hidden="true" style="color:green;"></i> Adding a cup of vinegar to the rinse
+                      <br>
+                      <i class="fas fa-check-circle" aria-hidden="true" style="color:green;"></i> Adding half cup of salt to the wash
+                      <br>
+                      <i class="fas fa-check-circle" aria-hidden="true" style="color:green;"></i> Use colour-catcher sheets to trap extraneous dyes during the wash
+                      <br>
+                      <i class="fas fa-check-circle" aria-hidden="true" style="color:green;"></i> Wash different coloured fabrics separately
+                      <br>
+                      <i class="fas fa-times-circle" aria-hidden="true" style="color:rgb(209, 73, 49);"></i> Avoid soaking overnight
+                      <br><br>
+                        We apologise that we are unable to be held responsible for any colour runs which may occur during the wash process. However, we welcome your feedback if you should face any issues despite using any of the prevention techniques listed above. 
+                        <br><br>
+                        Feel free to share with us any personal tips you have found useful, and let us #staysafe-in-style. 😃
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+              <!-- Panel Default -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#check6">
+                                                <span class="acc-icons"></span> How should I place my order?
+											</a>
+										</h4>
+                </div>
+                <div id="check6" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      Please <a href="https://api.whatsapp.com/send?phone=+6597369897" target="_blank"> <i class="fab fa-whatsapp-square" aria-hidden="true" style="color:green;"></i> whatsapp</a> us @ <i class="fas fa-mobile-alt" aria-hidden="true" style="color:black;"></i> <a href="https://api.whatsapp.com/send?phone=+6597369897" target="_blank">9736 9897</a>!
+                      <br><br>
+                      Payment can be made via PayLah! or PayNow to the same number. 😃
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 5%;">
+          <img data-src="img/about/animatedv3.gif" alt="" style="height:600px;" class="lazyload">
+        </div>
+      </div>
+      <!-- end Row -->
+    </div>
+  </div>
+  <!-- End Faq Area -->
+
+  <!-- Start Footer bottom Area -->
+  <footer>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+                <br>
+                Modified by: <strong>Xem</strong> (Media), <strong>Ying<sup>2</sup></strong> (Media), <strong>Lin<sup>2</sup></strong> (Web) & <strong>Sam</strong> (QC)
+              </p>
+            </div>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
+              -->
+              <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/knob/jquery.knob.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="lib/appear/jquery.appear.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <script src="js/main.js?v=1.0.9"></script>
+  <script src="js/lazysizes.min.js" async=""></script>
+  <script>
+    var s = $("#sticker");
+    var pos = s.position();
+    s.removeClass("stick")
+    $(window).on('scroll', function() {
+      var windowpos = $(window).scrollTop() > 200;
+      if (windowpos > pos.top) {
+        s.addClass("stick");
+        let myElement = document.querySelector("#header-area");
+        myElement.style.backgroundColor = "rgba(254,182,170)";
+      } else {
+        s.removeClass("stick");
+      }
+    });
+    var main_menu = $(".main-menu ul.navbar-nav li ");
+    main_menu.on('click', function() {
+      main_menu.removeClass("active");
+      $(this).addClass("active");
+    });
+    $(document).ready(function(){
+      //Check if the current URL contains '#' 
+      if(document.URL.indexOf("#home")==-1)
+      {
+          // Set the URL to whatever it was plus "#".
+          url = document.URL+"#home";
+          location = "#home";
+          //Reload the page
+          location.reload(true)
+          document.scrollTop(0);
+      } 
+    });
+    
+  </script>
+</body>
+
+</html>
