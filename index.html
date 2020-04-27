@@ -561,7 +561,9 @@
                 location = "#home";
                 //Reload the page
                 location.reload(true)
-                document.scrollTop(0);
+                document.scrollTop(-99999);
+            } else if (document.URL.indexOf("#home") > -1){
+              document.scrollTop(-99999);
             } 
           }
         }
