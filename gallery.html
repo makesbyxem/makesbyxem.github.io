@@ -65,13 +65,13 @@
       var uniqueNum = new Date().getTime();
 
       // update js scripts
-      var js_files = ['js/main.js','js/lazysizes.min.js']
+      var js_files = ['js/main.js','js/lazysizes.min.js'];
       for (let i = 0; i < js_files.length; i++){
-        var script = document.createElement("script"); 
-        script.src = js_files[i] + "?v=" + uniqueNum;
-        document.body.appendChild(script);
+          var script = document.createElement("script"); 
+          script.src = js_files[i] + "?v=" + uniqueNum;
+          document.body.appendChild(script);
       }
-      
+
       // update css files
       var css_files = ['css/style.css','css/responsive.css','css/custom-banner.css','css/nivo-slider-theme.css','css/util.css','css/main.css'];
       for (let i = 0; i < css_files.length; i++){

@@ -68,41 +68,41 @@
         var uniqueNum = new Date().getTime();
 
         // update js scripts
-        var js_files = ['js/main.js','js/lazysizes.min.js'];
-        for (let i = 0; i < js_files.length; i++){
-            var script = document.createElement("script"); 
-            script.src = js_files[i] + "?v=" + uniqueNum;
-            document.body.appendChild(script);
-        }
+      var js_files = ['js/main.js','js/lazysizes.min.js'];
+      for (let i = 0; i < js_files.length; i++){
+          var script = document.createElement("script"); 
+          script.src = js_files[i] + "?v=" + uniqueNum;
+          document.body.appendChild(script);
+      }
 
-        // update css files
-        var css_files = ['css/style.css','css/responsive.css','css/custom-banner.css','css/nivo-slider-theme.css','css/util.css','css/main.css'];
-        for (let i = 0; i < css_files.length; i++){
-            var cssElement = document.createElement('link');
-            cssElement.setAttribute('rel','stylesheet');
-            cssElement.setAttribute('type','text/css');
-            var cssURL = css_files[i] + '?v=' + uniqueNum;
-            cssElement.setAttribute('href', cssURL);
-            document.getElementsByTagName("head")[0].appendChild(cssElement);
-        }
+      // update css files
+      var css_files = ['css/style.css','css/responsive.css','css/custom-banner.css','css/nivo-slider-theme.css','css/util.css','css/main.css'];
+      for (let i = 0; i < css_files.length; i++){
+          var cssElement = document.createElement('link');
+          cssElement.setAttribute('rel','stylesheet');
+          cssElement.setAttribute('type','text/css');
+          var cssURL = css_files[i] + '?v=' + uniqueNum;
+          cssElement.setAttribute('href', cssURL);
+          document.getElementsByTagName("head")[0].appendChild(cssElement);
+      }
 
-        // update index images
-        var images = ['img/makesbyxem_circle_v2.png','img/background/IMG_1163_modified.JPG', 'img/about/animatedv3.gif', 'img/about/Masks.gif','img/about/announcement.gif'];
-        for (let i = 0; i < images.length; i++){
-            var image = document.createElement('img');
-            image.src = images[i] + '?v=' + uniqueNum;
-            document.getElementById('body').appendChild(image);
-        }
+      // update index images
+      var images = ['img/makesbyxem_circle_v2.png','img/background/IMG_1163_modified.JPG', 'img/about/animatedv3.gif', 'img/about/Masks.gif','img/about/announcement.gif'];
+      for (let i = 0; i < images.length; i++){
+          var image = document.createElement('img');
+          image.src = images[i] + '?v=' + uniqueNum;
+          document.getElementById('body').appendChild(image);
+      }
 
-        // update gallery images
-        for (let i = 1; i <= 52; i++){
-            var image = document.createElement('img');
-            image.src = 'img/gallery/' + i + '.png?v=' + uniqueNum;
-            document.getElementById('body').appendChild(image);
-        }
+      // update gallery images
+      for (let i = 1; i <= 52; i++){
+          var image = document.createElement('img');
+          image.src = 'img/gallery/' + i + '.png?v=' + uniqueNum;
+          document.getElementById('body').appendChild(image);
+      }
 
-        // update designs images
-        var images = ['img/designs/abstract_blue.png', 'img/designs/abstract_navy.png', 'img/designs/alpaca.png', 'img/designs/bee.png', 'img/designs/black.png', +
+      // update designs images
+      var images = ['img/designs/abstract_blue.png', 'img/designs/abstract_navy.png', 'img/designs/alpaca.png', 'img/designs/bee.png', 'img/designs/black.png', +
         'img/designs/blackspots.png', 'img/designs/cactus.png', 'img/designs/camo.png', 'img/designs/cats.png', 'img/designs/checkered_blue.png', +
         'img/designs/checkered_red.png', 'img/designs/cream_floral.png', 'img/designs/DarkNavy.png', 'img/designs/dark_grey.png', 'img/designs/dino.png', + 
         'img/designs/dogs.png', 'img/designs/fox.png', 'img/designs/dusty_blue.png', 'img/designs/greyspots.png', 'img/designs/hellokitty.png', 'img/designs/Navy.png', + 
@@ -229,7 +229,7 @@
             <!-- single-awesome-project start -->
             <div class="col-md-4 col-sm-4 col-xs-12 prints ">
                 <div class="single-awesome-project">
-                    <img src="img/designs/astronaut.png" alt="" class="lazyload"/>
+                    <img src="img/designs/astronaut.png" alt="" class="lazyload" data-zoom-image="img/designs/astronaut.png" onmouseover="mouseOver()"/>
                     <h4 style="padding-top: 10px;text-align: center;">Astronauts</h4>
                     <!-- <p style="font-size: 18px;text-align: center;color:red;"><i class="fas fa-times-circle"></i> <b>SOLD OUT</b></p> -->
                     <p style="font-size: 18px;text-align: center;color:green;"><b><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> NEW!!!</b></p>
@@ -239,7 +239,7 @@
             <!-- single-awesome-project start -->
             <div class="col-md-4 col-sm-4 col-xs-12 floral ">
                 <div class="single-awesome-project">
-                    <img src="img/designs/black_floral.png" alt="" class="lazyload"/>
+                    <img src="img/designs/black_floral.png" alt="" class="lazyload" data-zoom-image="img/designs/black_floral.png" onmouseover="mouseOver()"/>
                     <h4 style="padding-top: 10px;text-align: center;">Black Floral</h4>
                     <!-- <p style="font-size: 18px;text-align: center;color:red;"><i class="fas fa-times-circle"></i> <b>SOLD OUT</b></p> -->
                     <p style="font-size: 18px;text-align: center;color:green;"><b><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> NEW!!!</b></p>
@@ -261,16 +261,6 @@
                 <div class="single-awesome-project">
                     <img src="img/designs/blue_sushi.png" alt="" class="lazyload"/>
                     <h4 style="padding-top: 10px;text-align: center;">Blue Sushi</h4>
-                    <!-- <p style="font-size: 18px;text-align: center;color:red;"><i class="fas fa-times-circle"></i> <b>SOLD OUT</b></p> -->
-                    <p style="font-size: 18px;text-align: center;color:green;"><b><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> NEW!!!</b></p>
-                </div>
-            </div>
-            <!-- single-awesome-project end -->
-            <!-- single-awesome-project start -->
-            <div class="col-md-4 col-sm-4 col-xs-12 prints ">
-                <div class="single-awesome-project">
-                    <img src="img/designs/corgi.png" alt="" class="lazyload"/>
-                    <h4 style="padding-top: 10px;text-align: center;">Corgi</h4>
                     <!-- <p style="font-size: 18px;text-align: center;color:red;"><i class="fas fa-times-circle"></i> <b>SOLD OUT</b></p> -->
                     <p style="font-size: 18px;text-align: center;color:green;"><b><i class="fas fa-exclamation-triangle" aria-hidden="true"></i> NEW!!!</b></p>
                 </div>
@@ -757,6 +747,8 @@
 
   <script src="js/main.js?v=1.0.9"></script>
   <script src="js/lazysizes.min.js" async=""></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
   <script>
     var s = $("#sticker");
     s.addClass("stick");
@@ -776,6 +768,13 @@
                 scrollTop: -100
             }, 0);
     });
+    
+    function mouseOver() {
+        $(this).ezPlus({
+        zoomWindowWidth: 250,
+        zoomWindowHeight: 250
+    });
+}
   </script>
 </body>
 

@@ -65,13 +65,13 @@
       var uniqueNum = new Date().getTime();
 
       // update js scripts
-      var js_files = ['js/main.js','js/lazysizes.min.js']
+      var js_files = ['js/main.js','js/lazysizes.min.js'];
       for (let i = 0; i < js_files.length; i++){
-        var script = document.createElement("script"); 
-        script.src = js_files[i] + "?v=" + uniqueNum;
-        document.body.appendChild(script);
+          var script = document.createElement("script"); 
+          script.src = js_files[i] + "?v=" + uniqueNum;
+          document.body.appendChild(script);
       }
-      
+
       // update css files
       var css_files = ['css/style.css','css/responsive.css','css/custom-banner.css','css/nivo-slider-theme.css','css/util.css','css/main.css'];
       for (let i = 0; i < css_files.length; i++){
@@ -312,6 +312,10 @@
   <script src="js/main.js?v=1.0.9"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha256-swvs/72H2JZrIbyDdMskQv2t0bpTO5tgJOWVMBgZq6U=" crossorigin="anonymous"></script>
   <script src="js/lazysizes.min.js" async=""></script>
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+
   <script>
     $('#pagination-demo').twbsPagination({
       totalPages: 2,
@@ -376,6 +380,10 @@
         $([document.documentElement, document.body]).animate({
                 scrollTop: -100
             }, 0);
+    });
+    $('#zoom').ezPlus({
+        zoomWindowWidth: 250,
+        zoomWindowHeight: 250
     });
   </script>
 </body>
