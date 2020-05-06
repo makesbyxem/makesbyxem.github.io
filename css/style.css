@@ -2488,22 +2488,6 @@ span.email-notes {
           
 }
 
-.corners:after {
-  left: -50px;
-  -webkit-transform: rotate(-45deg);
-     -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-       -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.corners:before {
-  right: -50px;
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 767px) {
   .corners{
