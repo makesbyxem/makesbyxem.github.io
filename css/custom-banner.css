@@ -452,7 +452,7 @@
 
   .counter-count
   {
-      background-color: #FC8069;
+      background-color: rgb(248, 153, 136);
       border-radius: 50%;
       text-align: center;
       width: 125px;
@@ -473,7 +473,7 @@
       color: #fff;
 
       padding-top:25px;
-      animation: beat .75s infinite alternate;
+      /* animation: beat .75s infinite alternate; */
   }
   
   @keyframes beat{
