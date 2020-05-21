@@ -82,42 +82,11 @@
           cssElement.setAttribute('href', cssURL);
           document.getElementsByTagName("head")[0].appendChild(cssElement);
       }
-
-      // update index images
-      var images = ['img/makesbyxem_circle_v2.png','img/background/IMG_1163_modified.JPG', 'img/about/animatedv3.gif', 'img/about/Masks.gif','img/about/announcement.gif'];
-      for (let i = 0; i < images.length; i++){
-          var image = document.createElement('img');
-          image.src = images[i] + '?v=' + uniqueNum;
-          document.getElementById('body').appendChild(image);
-      }
-
-      // update gallery images
-      for (let i = 1; i <= 52; i++){
-          var image = document.createElement('img');
-          image.src = 'img/gallery/' + i + '.png?v=' + uniqueNum;
-          document.getElementById('body').appendChild(image);
-      }
-
-      // update designs images
-      var images = ['img/designs/abstract_blue.png', 'img/designs/abstract_navy.png', 'img/designs/alpaca.png', 'img/designs/bee.png', 'img/designs/black.png', +
-        'img/designs/blackspots.png', 'img/designs/cactus.png', 'img/designs/camo.png', 'img/designs/cats.png', 'img/designs/checkered_blue.png', +
-        'img/designs/checkered_red.png', 'img/designs/cream_floral.png', 'img/designs/DarkNavy.png', 'img/designs/dark_grey.png', 'img/designs/dino.png', + 
-        'img/designs/dogs.png', 'img/designs/fox.png', 'img/designs/dusty_blue.png', 'img/designs/greyspots.png', 'img/designs/hellokitty.png', 'img/designs/Navy.png', + 
-        'img/designs/grapefruit.png', 'img/designs/panda.png', 'img/designs/pattern_triangle.png', 'img/designs/shark.png', 'img/designs/space_grey.png', + 
-        'img/designs/space_navy.png', 'img/designs/striped_greenv2.png', 'img/designs/striped_lightredv2.png', 'img/designs/striped_redv2.png', 'img/designs/superhero.png', +
-        'img/designs/sushi.png', 'img/designs/unicorn.png', 'img/designs/vehicles.png', 'img/designs/whale.png', 'img/designs/yellow_floral.png', 'img/designs/astronaut.png', + 
-        'img/designs/black_floral.png', 'img/designs/navy_flowers.png', 'img/designs/blue_sushi.png', 'img/designs/corgi.png', 'img/designs/dinos.png', 'img/designs/mixed_fruit.png' + 
-        'img/designs/pink.png','img/designs/pink_floral.png', 'img/designs/plain_sharks.png','img/designs/white_floral.png','img/designs/yellow_sushi.png'];
-        for (let i = 0; i < images.length; i++){
-            var image = document.createElement('img');
-            image.src = images[i] + '?v=' + uniqueNum;
-            document.getElementById('body').appendChild(image);
-        }
     });
   </script>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example">
+<body data-spy="scroll" data-target="#navbar-example" style="background-image: url('img/background/header.jpg');">
 
   <!-- <div id="preloader"></div> -->
 
@@ -150,9 +119,6 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li>
                     <a class="page-scroll" href="/#home"><i class="fas fa-home" aria-hidden="true"></i> HOME</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="/#announcement"><i class="fas fa-bullhorn" aria-hidden="true"></i> ANNOUNCEMENTS</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="/#about"><i class="fas fa-info-circle" aria-hidden="true"></i> ABOUT</a>
@@ -265,25 +231,27 @@
 
   <!-- Start Footer bottom Area -->
   <footer>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
-                <br>
-                Modified by: <strong>Xem</strong> (Media), <strong>Ying<sup>2</sup></strong> (Media), <strong>Lin<sup>2</sup></strong> (Web) & <strong>Sam</strong> (QC)
-              </p>
-            </div>
-            <div class="credits">
-              <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
-              -->
-              <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+    <div class="footer-area">
+      <div class="footer-area-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="copyright text-center">
+                <p>
+                  &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+                  <br>
+                  Modified by: <strong>Xem</strong> (Media), <strong>Ying<sup>2</sup></strong> (Media), <strong>Lin<sup>2</sup></strong> (Web) & <strong>Sam</strong> (QC)
+                </p>
+              </div>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
+                -->
+                <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+              </div>
             </div>
           </div>
         </div>
