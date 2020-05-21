@@ -20,7 +20,7 @@ table td, table th {
 }
 table thead tr {
   height: 35px;
-  background: #36304a;
+  background: #91AC9A;
 }
 table tbody tr {
   height: 40px;
@@ -44,14 +44,16 @@ table td.r, table th.r {
 
 .table100-head th{
   font-size: 16px;
-  color: #fff;
+  color: black;
+  font-weight: 700;
   line-height: 1.2;
   font-weight: unset;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #dcdcdc;
-}
+/* tbody tr:nth-child(even) {
+  background-color: #FE676E;
+  color:white;
+} */
 
 tbody tr {
   font-size: 16px;
