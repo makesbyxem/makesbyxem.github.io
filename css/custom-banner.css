@@ -481,11 +481,13 @@
 
   .niceties.preview-2 .ribbon {
     position: absolute;
-    top: 5%;
-    background-color: black;
-    color:white;
-    padding: 8px 28px 8px;
-    font-size: 14px;
+    top: 0;
+    /* background-color: #A9C3B6; */
+    background-color: #CEDFDF;
+    /* opacity: .7; */
+    color:black;
+    padding: 8px 8px 8px 8px;
+    font-size: 12px;
     font-weight: 500;
   }
 
