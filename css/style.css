@@ -1144,14 +1144,14 @@ div#preloader {
 }
 
 .project-menu li a.active {
-  border-color:#FFDD94;
-  background: #FFDD94;
+  border-color:#91AC9A;
+  background: #91AC9A;
   color: black;
   text-decoration: none;
 }
 .project-menu li a:hover {
-  border-color:#91AC9A;
-  background: #91AC9A;
+  border-color:#A9C3B6;
+  background: #A9C3B6;
   color: black;
   text-decoration: none;
 }
@@ -1751,13 +1751,13 @@ div#preloader {
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
   border-radius: 30px;
-  background: #FFDD94;
+  background: #91AC9A;
 }
 
 .contact-form button[type=submit]:hover {
   color: black;
-  border: 1px solid #91AC9A;
-  background: #91AC9A;
+  border: 1px solid #A9C3B6;
+  background: #A9C3B6;
 }
 
 .contact-form button {
@@ -1771,13 +1771,13 @@ div#preloader {
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
   border-radius: 30px;
-  background: #FFDD94;
+  background: #91AC9A;
 }
 
 .contact-form button:hover {
   color: black;
-  border: 1px solid #91AC9A;
-  background: #91AC9A;
+  border: 1px solid #A9C3B6;
+  background: #A9C3B6;
 }
 
 .contact-form  #sendmessage {
@@ -2811,7 +2811,7 @@ span.email-notes {
   display: inline-block;
   padding: 10px;
   text-transform: uppercase;
-  border: 2px solid #FFDD94;
+  border: 2px solid #91AC9A;
   border-radius: 3px;
   color: black;
   font-size:14px;
@@ -2820,7 +2820,7 @@ span.email-notes {
 }
 
 #id_work_days input[type="radio"]:checked + span {
-  background-color: #FFDD94;
+  background-color: #91AC9A;
   color: black;
 }
 
