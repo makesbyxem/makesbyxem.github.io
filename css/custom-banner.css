@@ -389,7 +389,7 @@
 	/* background-color:  rgba(0, 0, 0, 0.4); */
 	background-color:  white;
 	color: black;
-	font-size: 16px;
+	font-size: 12px;
 	letter-spacing: 1px;
 	display: inline-block;
 	padding: 8px 28px;
@@ -397,7 +397,7 @@
 	transition: 0.5s;
 	border: 2px solid #fff;
   color: black;
-  width:300px;
+  width:200px;
   }
   .niceties.preview-2 .link {
     color:black;
@@ -489,6 +489,7 @@
     padding: 8px 8px 8px 8px;
     font-size: 12px;
     font-weight: 500;
+    text-transform: uppercase;
   }
 
   .counter-count
@@ -547,7 +548,7 @@
       top: 75%;
       left: 50%;
       font-size: 10px;
-      width:200px;
+      width:100px;
       }
       .niceties.preview-2 .link {
         font-size:10px;
@@ -586,7 +587,7 @@
       top: 75%;
       font-size:10px;
       padding: 8px 28px;
-      width:200px;
+      width:100px;
       }
       .niceties.preview-2 .link {
         font-size:10px;
