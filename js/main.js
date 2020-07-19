@@ -215,4 +215,16 @@
    Redirect
   --------------------- */
   domain = window.location.hostname;
-  console.log(domain);
+  pathname = window.location.pathname;
+  if (domain == "makesbyxem.github.io"){
+    $.get("https://makesbyxem.imfast.io" , function (statusText) {
+      if (this.status == 200){
+        if (pathname != ''){
+          window.location.replace("https://makesbyxem.imfast.io" + pathname);
+        } else{
+          window.location.replace("https://makesbyxem.imfast.io")
+        }
+      }
+      
+    });
+  }
