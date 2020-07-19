@@ -210,3 +210,9 @@
   }
 
 })(jQuery);
+
+  /*---------------------
+   Redirect
+  --------------------- */
+  domain = window.location.hostname;
+  console.log(domain);
