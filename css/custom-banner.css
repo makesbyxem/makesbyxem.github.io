@@ -548,7 +548,7 @@
       top: 75%;
       left: 50%;
       font-size: 10px;
-      width:100px;
+      width:175px;
       }
       .niceties.preview-2 .link {
         font-size:10px;
@@ -584,21 +584,21 @@
       padding: 46px 0px;
     }
     .niceties.preview-2 .stay_safe_btn {
-      top: 75%;
-      font-size:10px;
+      top: 80%;
+      font-size:6px;
       padding: 8px 28px;
-      width:100px;
+      width:150px;
       }
       .niceties.preview-2 .link {
-        font-size:10px;
+        font-size:6px;
       }
       .niceties.preview-2 .text {
         top: 12.5%;
-        font-size:10px;
+        font-size:6px;
       }
       .niceties.preview-2 .header-text {
         padding: 8px 28px 8px;
-        font-size:18px;
+        font-size:12px;
       }
       .counter-count
       {
@@ -606,7 +606,7 @@
           height: 75px;
           top: 50%;
           right: 7.5%;
-          font-size: 8px;
+          font-size: 6px;
           letter-spacing: 0px;
     
           padding-top:0px;
