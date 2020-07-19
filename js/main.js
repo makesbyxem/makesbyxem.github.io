@@ -220,9 +220,9 @@
     $.get("https://makesbyxem.imfast.io" , function (statusText) {
       if (this.status == 200){
         if (pathname != ''){
-          window.location.replace("https://makesbyxem.imfast.io" + pathname);
+          window.location.href = "https://makesbyxem.imfast.io" + pathname;
         } else{
-          window.location.replace("https://makesbyxem.imfast.io")
+          window.location.href = "https://makesbyxem.imfast.io";
         }
       }
       
