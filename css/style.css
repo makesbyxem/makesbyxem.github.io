@@ -1287,9 +1287,9 @@ div#preloader {
   display: inline-block;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 70px;
   position: relative;
   text-transform: capitalize;
+  margin-bottom: 30px;
 }
 
 .project-headline::after {
